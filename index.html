@@ -35,5 +35,8 @@
     console.log("dataLayer pushed");
   </script>
 
-  <a href="#" name="button1" onclick="dataLayer.push({'event': 'buttonClick'});" >Button 1</a>
+  <a href="#" name="button1" onclick="dataLayer.push({ 
+        'customerID' : 'customer-id-guid',
+        'event' : 'buttonClick',
+        'buttonId' : 'button-index'});" >Button 1</a>
 </body>
