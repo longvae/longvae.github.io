@@ -14,6 +14,7 @@
    window.dataLayer.push({
    'customerID': 'customer-id-guid'
    });
+   var eventNumber = 1;
  </script>
 
   <!-- End Google Tag Manager -->
@@ -24,20 +25,17 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <h1>Welcome to Test Branch page!</h1>
-
   <script>
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       'customerID' : 'customer-id-guid',
+      'eventNumber': eventNumber,
       'event' : 'buttonClick',
       'buttonId' : 'button-index'
     });
-    console.log("dataLayer pushed");
+    eventNumber++;
+    console.log("dataLayer pushed")
   </script>
 
-  <a href="#" name="button1" onclick="dataLayer.push({
-        'customerID' : 'customer-id-guid',
-        'event' : 'buttonClick',
-        'buttonId' : 'button-index'});"
-         >Button 1</a>
+  <a href="#" name="button1" onclick="dataLayer.push({'event': 'buttonClick'});" >Button 1</a>
 </body>
