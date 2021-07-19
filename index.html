@@ -14,7 +14,7 @@
    window.dataLayer.push({
    'customerID': 'customer-id-guid'
    });
-   var window.eventNumber = 1;
+   //var window.eventNumber = 1;
  </script>
 
   <!-- End Google Tag Manager -->
@@ -29,12 +29,11 @@
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       'customerID' : 'customer-id-guid',
-      'eventNumber': window.eventNumber,
       'event' : 'buttonClick',
       'buttonId' : 'button-index'
     });
-    console.log(window.eventNumber);
-    window.eventNumber++;
+    //console.log(window.eventNumber);
+    //window.eventNumber++;
   </script>
 
   <a href="#" name="button1" onclick="dataLayer.push({'event': 'buttonClick'});" >Button 1</a>
