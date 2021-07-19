@@ -24,16 +24,16 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <h1>Welcome to Test Branch page!</h1>
-  <script>
+  <!-- <script>
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       'customerID' : 'customer-id-guid',
       'event' : 'buttonClick',
       'buttonId' : 'button-index'
     });
-  </script>
+  </script> -->
 
-  <a href="#" name="button1" onclick="dataLayer.push({'event': 'singleKeyTag'});" >Single Key</a>
-  <a href="#" name="button2" onclick="dataLayer.push({'event': 'multipleKeysTag'});" >Multiple Keys</a>
-  <a href="#" name="button3" onclick="dataLayer.push({'event': 'buttonClick'});" >Single Key</a>
+  <a href="#" name="button1" onclick="dataLayer.push({'event': 'singleKeyTag', 'customerID' : 'customer-id-guid', 'buttonId' : 'button-index' });" >Single Key</a>
+  <a href="#" name="button2" onclick="dataLayer.push({'event': 'multipleKeysTag', 'customerID' : 'customer-id-guid', 'buttonId' : 'button-index'});" >Multiple Keys</a>
+  <a href="#" name="button3" onclick="dataLayer.push({'event': 'buttonClick', 'customerID' : 'customer-id-guid', 'buttonId' : 'button-index'});" >Single Key</a>
 </body>
